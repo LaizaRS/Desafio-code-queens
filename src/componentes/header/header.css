@@ -1,0 +1,61 @@
+header {
+  background-color: #CDEAFC;
+  border-radius: 30px 0 0 30px;
+}
+
+.primeira-parte {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.desbotado {
+  color: #545454b6;
+}
+
+header h1  {
+  font-size: x-large;
+}
+
+input{
+ 
+}
+
+.perfil {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.search-section  {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  gap: 5px;
+}
+
+.arrumando {
+  background: transparent;
+  font-size: x-large;
+}
+
+.segunda-parte {
+  margin: auto;
+  width: 90%;
+  border-radius: 15px;
+  background-color: #0E537D;
+  color: #fff;
+  padding: 20px;
+}
+.segunda-parte img {
+  max-width: 50%;
+}

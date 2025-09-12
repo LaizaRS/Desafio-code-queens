@@ -1,0 +1,68 @@
+.favoritos {
+  background-color: #CDEAFC;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap:1px
+}
+
+.display-flex-sem-justify-content {
+  display: flex;
+  gap: 5px;
+}
+
+.inline {
+ position: relative;
+}
+
+.coracao {
+  position: absolute;
+  top: -10px;
+  right: -25px;
+  align-self: flex-start;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: red;
+  display: flex;
+  align-items: center;
+}
+
+.img-favoritos {
+  width: 150px;
+  height: 150px;
+}
+
+.nome-comida-favoritos {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.display-flex-favoritos {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-around;
+  width: 45%;
+}
+
+.laranja {
+  color: #DA762F;
+}
+
+.add-to-cart {
+  padding: 10px;
+  width: 100%;
+  background-color: #DA762F;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 15px;
+  margin-top: 5px;
+ 
+}
+
+.add-to-cart:hover {
+  background-color: #bd6a2e;
+  cursor: pointer;
+}

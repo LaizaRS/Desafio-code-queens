@@ -1,0 +1,50 @@
+.menu-popular {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.card {
+  width: 150px;
+  height: 260px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  background-color: #fff;
+}
+
+.comida-img {
+  width: 150px;
+  height: 150px;
+}
+
+.nome-comida {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.display-flex-itens-center-space-around {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  justify-content: space-around;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background-color: #DA762F;
+  border-radius: 50%;
+}
+
+.preco-comida {
+  margin: 15px 0 0 0;
+  font-weight: 600;
+}

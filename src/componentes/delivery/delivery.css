@@ -1,0 +1,38 @@
+.delivery {
+  background-color: #CDEAFC;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 70px 40px 25px 25px;
+  position: relative;
+  padding: 20px 5px 20px 5px;
+  height: 32%;
+}
+
+.img-delivery {
+  position:absolute;
+  width: 300px;
+  height: auto;
+  top: -70px;
+}
+
+.subiscribe {
+  display: flex;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.button-delivery {
+  padding: 5px;
+  border-radius: 7px;
+  color: #FFF;
+  background-color: #DA762F;
+}
+
+
+.button-delivery:hover {
+  background-color: #bd6a2e;
+  cursor: pointer;
+}

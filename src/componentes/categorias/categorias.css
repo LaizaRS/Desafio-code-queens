@@ -1,0 +1,37 @@
+.categorias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  margin: 10px;
+}
+
+.categorias h2 {
+  align-self: self-start;
+}
+
+.display-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categoria {
+  height: 4rem;
+  display: flex;
+  padding: 15px;
+  background-color: #fff;
+  gap: 5px;
+  border-radius: 15px;
+}
+
+.categoria:hover {
+  background-color: #DA762F;
+  color: #fff;
+}
+
+.icone {
+  width: 2rem; 
+  height: auto;
+}
