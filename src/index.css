@@ -36,18 +36,22 @@ body {
   height: auto;
 }
 
-aside {
-  display: flex;
-  flex-direction: row;
-  height: auto;
-}
+#root .centralizar aside {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
 
-aside nav {
-  display: flex;
-  flex-direction: row;
-  width: max-content;
-  justify-content: space-between;
-}
+  #root .centralizar aside nav {  
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    width: 100% !important;                             
+  }
+
+  #root .centralizar aside nav ul {
+    display: flex;
+  }
 
 aside nav .img-nav-bar {
   margin: 0;
@@ -55,11 +59,6 @@ aside nav .img-nav-bar {
 
 aside nav .log-out {
   margin: 0;
-}
-
-aside nav ul {
-  display: flex;
-   width: max-content;
 }
 
 .favoritos-e-delivery  {
