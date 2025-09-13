@@ -1,12 +1,10 @@
-import Delivery from "../delivery/Delivery";
-import Favoritos from "../favoritos/Favoritos";
-import Header from "../header/Header";
-import NavBar from "../navbar/NavBar";
+import Delivery from '../delivery/Delivery';
+import Favoritos from '../favoritos/Favoritos';
+import Header from '../header/Header';
+import NavBar from '../navbar/NavBar';
 import './main.css';
 
 function Main() {
-  
-
   return (
     <main>
       <NavBar />
@@ -16,7 +14,7 @@ function Main() {
         <Delivery />
       </div>
     </main>
-  )
+  );
 }
 
-export default Main
+export default Main;

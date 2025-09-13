@@ -1,24 +1,22 @@
-import { useState } from "react";
-import { CiBellOn, CiSearch } from "react-icons/ci";
+import { useState } from 'react';
+import { CiBellOn, CiSearch } from 'react-icons/ci';
 
-import Categorias from "../categorias/Categorias";
-import MenuPopular from "../menuPopular/MenuPopular";
+import Categorias from '../categorias/Categorias';
+import MenuPopular from '../menuPopular/MenuPopular';
 import './header.css';
 
-
-
 function Header() {
-    const [categoria, setCategoria] = useState("hamburgers");
-    
+  const [categoria, setCategoria] = useState('hamburgers');
+
   return (
     <header>
       <div className="primeira-parte">
         <div>
           <p className="desbotado">Welcome</p>
-        <h1>Let's Order Your Food</h1>
+          <h1>Let's Order Your Food</h1>
         </div>
         <section>
-          <div className="search-section" >
+          <div className="search-section">
             <CiSearch />
             <input type="text" placeholder="Search" />
           </div>
@@ -30,7 +28,9 @@ function Header() {
       </div>
       <section className="segunda-parte">
         <div>
-          <h2>Order Food and Get <br /> Discouts Up To <br /> </h2>
+          <h2>
+            Order Food and Get <br /> Discouts Up To <br />{' '}
+          </h2>
           <h2 className="margin-top"> 50% Off</h2>
         </div>
         <img src="./img/imagem01.png" alt="desenho de entregador entregando a comida" />
@@ -38,7 +38,7 @@ function Header() {
       <Categorias categoria={categoria} setCategoria={setCategoria} />
       <MenuPopular categoriaSelecionada={categoria} />
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

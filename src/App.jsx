@@ -1,15 +1,11 @@
-import Main from "./componentes/main/Main"
-
-
+import Main from './componentes/main/Main';
 
 function App() {
-  
-
   return (
-   <div className="centralizar">
-     <Main />
-   </div>
-  )
+    <div className="centralizar">
+      <Main />
+    </div>
+  );
 }
 
-export default App
+export default App;
