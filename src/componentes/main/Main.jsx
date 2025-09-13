@@ -1,9 +1,7 @@
-import Header from "../header/Header";
-import NavBar from "../navbar/navbar";
-
-
 import Delivery from "../delivery/Delivery";
 import Favoritos from "../favoritos/Favoritos";
+import Header from "../header/Header";
+import NavBar from "../navbar/NavBar";
 import './main.css';
 
 function Main() {
