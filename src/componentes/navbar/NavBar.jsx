@@ -14,7 +14,7 @@ function NavBar() {
       <nav>
         <img className="img-nav-bar" src="./img/imagem03.png" alt="bandeija de comida fechada" />
         <ul>
-          <li><button className="bg-tranparent"> <GoHomeFill /> </button></li>
+          <li><button className="bg-tranparent selected"> <GoHomeFill /> </button></li>
           <li><button className="bg-tranparent"> <FaHeart /> </button></li>
           <li><button className="bg-tranparent"> <FaCartPlus /> </button></li>
           <li><button className="bg-tranparent"> <IoChatbubbleEllipsesOutline /> </button></li>

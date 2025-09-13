@@ -1,61 +1,36 @@
-import { useState } from 'react';
 import './categorias.css';
 
-function Categorias() {
-  // Estado guarda a categoria selecionada
-  const [categoria, setCategoria] = useState("");
-
+function Categorias({ categoria, setCategoria }) {
   const categorias = [
-    {
-      nome: 'Burger',
-      icone: "./img/iconeBurger.png",
-      target: "hamburgers"
-    },
-    {
-      nome: 'Pizza',
-      icone: "./img/iconePizza.png",
-      target: "pizzas"
-    },
-    {
-      nome: 'Ice Cream',
-      icone: "./img/iconeIceCream.png",
-      target: "sorvetes"
-    },
-    {
-      nome: 'Snack',
-      icone: "./img/iconeSnacks.png",
-      target: "snacks"
-    },
-    {
-      nome: 'Drink',
-      icone: "./img/iconeDrinks.png",
-      target: "drinks"
-    },
+    { id: "hamburgers", nome: 'Burger', icone: "./img/iconeBurger.png", target: "hamburgers" },
+    { id: "pizzas", nome: 'Pizza', icone: "./img/iconePizza.png", target: "pizzas" },
+    { id: "sorvetes", nome: 'Ice Cream', icone: "./img/iconeIceCream.png", target: "sorvetes" },
+    { id: "snacks", nome: 'Snack', icone: "./img/iconeSnacks.png", target: "snacks" },
+    { id: "drinks", nome: 'Drink', icone: "./img/iconeDrinks.png", target: "drinks" },
   ];
-
-  // Função para atualizar a categoria
-  function handleCategorias(target) {
-    setCategoria(target);
-  }
 
   return (
     <section className="categorias">
       <h2>Category</h2>
       <div className="display-flex">
-        {categorias.map((cat, index) => (
-          <div
-            className={`categoria ${categoria === cat.target ? "ativa" : ""}`}
-            key={index}
-            onClick={() => handleCategorias(cat.target)}
-          >
-            <img className="icone" src={cat.icone} alt={cat.nome} />
-            <span className="display-flex">{cat.nome}</span>
-          </div>
-        ))}
-      </div>
+        {categorias.map((cat) => {
+          let classe = "categoria";
+          if (categoria === cat.target) {
+            classe += " categoria-selecionada"; // adiciona a classe extra se for a ativa
+          }
 
-      {/* Só para teste: mostrar qual categoria foi clicada */}
-      {categoria && <p>Categoria selecionada: {categoria}</p>}
+          return (
+            <div
+              key={cat.id}
+              className={classe}
+              onClick={() => setCategoria(cat.target)}
+            >
+              <img className="icone" src={cat.icone} alt={cat.nome} />
+              <span className="display-flex">{cat.nome}</span>
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 }

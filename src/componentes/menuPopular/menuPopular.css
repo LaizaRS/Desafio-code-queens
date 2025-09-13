@@ -48,3 +48,9 @@
   margin: 15px 0 0 0;
   font-weight: 600;
 }
+
+.fogo-popular-menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

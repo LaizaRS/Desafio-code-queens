@@ -1,12 +1,13 @@
+import { SiFireship } from "react-icons/si";
+
 import './menuPopular.css';
 
 
 
 
 
-function MenuPopular() {
+function MenuPopular({ categoriaSelecionada }) {
 
-    
 const categorias = { 
   hamburgers: [ 
     { 
@@ -245,26 +246,36 @@ const categorias = {
   ], 
 };
 
-
+  const itens = categorias[categoriaSelecionada] || [];
 
 
   return (
   <section className='menu-popular'> 
-    <h2>Popular Menu</h2> 
-    <div className='display-flex'> 
-      {categorias.snacks.map((item) => (
-    <div className='card' key={item.id}> 
-    <img className='comida-img' src={item.imgSrc} alt={item.nome} /> 
-    <p className='nome-comida'>{item.nome}</p> 
-    <div className='display-flex-itens-center-space-around'> 
-      <p className='desbotado'>{item.tempo}min</p>
-      <p className='dot'></p>
-      <p className='desbotado'>{item.distancia}km</p> 
-    </div> 
-    <p className='preco-comida'>${item.valor}</p> 
+    <div className='fogo-popular-menu'>
+      <SiFireship  className='laranja'/>
+
+      <h2>Popular Menu</h2> 
     </div>
-    ))} 
-    </div> 
+
+   <div className='display-flex'> 
+        {itens.length > 0 ? (
+          itens.map((item) => (
+            <div className='card' key={item.id}> 
+              <img className='comida-img' src={item.imgSrc} alt={item.nome} /> 
+              <p className='nome-comida'>{item.nome}</p> 
+              <div className='display-flex-itens-center-space-around'> 
+                <p className='desbotado'>{item.tempo}min</p>
+                <p className='dot'></p>
+                <p className='desbotado'>{item.distancia}km</p> 
+              </div> 
+              <p className='preco-comida'>${item.valor}</p> 
+            </div>
+          ))
+        ) : (
+          <p>Selecione uma categoria para ver os itens</p>
+        )}
+      </div> 
+
   </section>
   )
 }

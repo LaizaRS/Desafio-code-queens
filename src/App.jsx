@@ -6,7 +6,9 @@ function App() {
   
 
   return (
-   <Main />
+   <div className="centralizar">
+     <Main />
+   </div>
   )
 }
 

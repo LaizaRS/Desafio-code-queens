@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +7,75 @@
   list-style: none;
   text-decoration: none;
   border: none;
+  font-family: "Lexend", sans-serif;
 }
 
 body {
   background-color: #CDEAFC;
-  margin: 5%;
 }
 
+.centralizar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  
+}
 
+@media only screen and (max-width: 1195px) {
+  .centralizar {
+    margin-top: 210px;
+  }
+
+  main {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+.img-nav-bar {
+  width: 100px;
+  height: auto;
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+aside nav {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  justify-content: space-between;
+}
+
+aside nav .img-nav-bar {
+  margin: 0;
+}
+
+aside nav .log-out {
+  margin: 0;
+}
+
+aside nav ul {
+  display: flex;
+   width: max-content;
+}
+
+.favoritos-e-delivery  {
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.favoritos {
+  max-width: 300px;
+  align-self: flex-start;
+}
+
+.delivery {
+  margin-top: -270px;
+  min-height: 250px;
+}
+
+}
 

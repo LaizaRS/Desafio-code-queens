@@ -59,3 +59,7 @@ section {
 .segunda-parte img {
   max-width: 50%;
 }
+
+.margin-top {
+  margin-top: 20px;
+}

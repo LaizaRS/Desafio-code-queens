@@ -10,6 +10,7 @@ nav {
   border-radius: 30px;
   justify-content: space-between;
   height: 100%;
+  width: auto;
 }
 
 img {
@@ -43,4 +44,9 @@ nav ul li {
   padding: 20px;
   border-top: solid 1px #fff;
   margin: 0 0 20px 0;
+}
+
+
+.selected {
+  background-color: #ffffff41;
 }
