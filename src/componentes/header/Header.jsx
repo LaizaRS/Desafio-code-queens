@@ -1,13 +1,8 @@
-import { useState } from 'react';
 import { CiBellOn, CiSearch } from 'react-icons/ci';
 
-import Categorias from '../categorias/Categorias';
-import MenuPopular from '../menuPopular/MenuPopular';
 import './header.css';
 
 function Header() {
-  const [categoria, setCategoria] = useState('hamburgers');
-
   return (
     <header>
       <div className="primeira-parte">
@@ -35,8 +30,6 @@ function Header() {
         </div>
         <img src="./img/imagem01.png" alt="desenho de entregador entregando a comida" />
       </section>
-      <Categorias categoria={categoria} setCategoria={setCategoria} />
-      <MenuPopular categoriaSelecionada={categoria} />
     </header>
   );
 }

@@ -2,42 +2,44 @@ import { FaFireAlt, FaHeart, FaRegClock, FaStar } from 'react-icons/fa';
 
 import './favoritos.css';
 
-function Favoritos() {
+function Favoritos({ produtoSelecionado }) {
+  console.log('produtoFavorito', produtoSelecionado);
   return (
     <section className="favoritos">
       <div className="inline">
-        <img className="img-favoritos" src="./img/hamburger0.png" alt="" />
+        <img
+          className="img-favoritos"
+          src={produtoSelecionado.imgSrc}
+          alt={produtoSelecionado.nome}
+        />
         <div className="coracao">
           <FaHeart />
         </div>
       </div>
       <div className="display-flex">
-        <p className="nome-comida-favoritos">CheeseBurger</p>{' '}
-        <p className="nome-comida-favoritos">$23</p>
+        <p className="nome-comida-favoritos">{produtoSelecionado.nome}</p>{' '}
+        <p className="nome-comida-favoritos">${produtoSelecionado.valor}</p>
       </div>
       <div className="display-flex-favoritos">
-        <p className="desbotado">20min</p>
+        <p className="desbotado">{produtoSelecionado.tempo}min</p>
         <p className="dot"></p>
-        <p className="desbotado">2km</p>
+        <p className="desbotado">{produtoSelecionado.distancia}km</p>
       </div>
       <div className="display-flex  margin-bottom">
         <div className="display-flex-sem-justify-content">
           <FaStar className="laranja" />
-          <p>4.5k</p>
+          <p>{produtoSelecionado.estrelas}k</p>
         </div>
         <div className="display-flex-sem-justify-content">
           <FaRegClock className="laranja" />
-          <p>20mim</p>
+          <p>{produtoSelecionado.tempo}mim</p>
         </div>
         <div className="display-flex-sem-justify-content">
           <FaFireAlt className="laranja" />
-          <p>30Kcal</p>
+          <p>{produtoSelecionado.calorias}Kcal</p>
         </div>
       </div>
-      <p className="desbotado margin-bottom">
-        A cheeseburger is a hamburger topped with cheese. Traditionally, the slice of cheese is
-        placed on top of the meat patty.
-      </p>
+      <p className="desbotado margin-bottom">{produtoSelecionado.description}</p>
       <button className="add-to-cart">Add to Cart</button>
     </section>
   );

@@ -6,16 +6,16 @@ function Categorias({ categoria, setCategoria }) {
     <section className="categorias">
       <h2>Category</h2>
       <div className="display-flex">
-        {categorias.map((cat) => {
+        {categorias.map((category) => {
           let classe = 'categoria';
-          if (categoria === cat.target) {
-            classe += ' categoria-selecionada'; // adiciona a classe extra se for a ativa
+          if (categoria === category.target) {
+            classe += ' categoria-selecionada';
           }
 
           return (
-            <div key={cat.id} className={classe} onClick={() => setCategoria(cat.target)}>
-              <img className="icone" src={cat.icone} alt={cat.nome} />
-              <span className="display-flex">{cat.nome}</span>
+            <div key={category.id} className={classe} onClick={() => setCategoria(category.target)}>
+              <img className="icone" src={category.icone} alt={category.nome} />
+              <span className="display-flex">{category.nome}</span>
             </div>
           );
         })}

@@ -2,21 +2,20 @@ import { SiFireship } from 'react-icons/si';
 import categoriasEProdutos from '../../services/Mocks/categoriasEProdutos';
 import './menuPopular.css';
 
-function MenuPopular({ categoriaSelecionada }) {
-  const produtos = categoriasEProdutos[categoriaSelecionada] || [];
+function MenuPopular({ categoriaSelecionada, produtoSelecionado, setProdutoSelecionado }) {
+  const produtos = categoriasEProdutos[categoriaSelecionada];
 
   return (
     <section className="menu-popular">
       <div className="fogo-popular-menu">
         <SiFireship className="laranja" />
-
         <h2>Popular Menu</h2>
       </div>
 
       <div className="display-flex">
         {produtos.length > 0 ? (
           produtos.map((item) => (
-            <div className="card" key={item.id}>
+            <div className="card" key={item.id} onClick={() => setProdutoSelecionado(item)}>
               <img className="comida-img" src={item.imgSrc} alt={item.nome} />
               <p className="nome-comida">{item.nome}</p>
               <div className="display-flex-itens-center-space-around">
