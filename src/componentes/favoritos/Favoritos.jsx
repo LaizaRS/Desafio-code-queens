@@ -3,7 +3,6 @@ import { FaFireAlt, FaHeart, FaRegClock, FaStar } from 'react-icons/fa';
 import './favoritos.css';
 
 function Favoritos({ produtoSelecionado }) {
-  console.log('produtoFavorito', produtoSelecionado);
   return (
     <section className="favoritos">
       <div className="inline">
