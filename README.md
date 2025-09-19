@@ -25,7 +25,7 @@ Isso permitiu maior flexibilidade e organização do código, simulando uma futu
 🔧 Como Rodar o Projeto
 
 Clone o repositório
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/LaizaRS/Desafio-code-queens.git
 
 Acesse a pasta do projeto
 cd nome-do-repositorio
