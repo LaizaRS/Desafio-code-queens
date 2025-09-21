@@ -3,6 +3,8 @@
 Este projeto foi desenvolvido como parte do primeiro desafio de Front-End da Code Queens.
 O objetivo foi reproduzir fielmente uma tela estática a partir de um design fornecido, buscando ser o mais preciso possível em relação ao layout original.
 
+🔗 **Veja o resultado online:** [Acesse aqui](https://laizars.github.io/Desafio-code-queens/)
+
 🚀 Tecnologias Utilizadas
 
 Vite
@@ -86,7 +88,5 @@ Código organizado, com boas práticas de estrutura e estilização
 Partes dinâmicas implementadas além do proposto, aproximando o projeto de um cenário real de desenvolvimento
 
 Uso de Context API para gerenciamento de estado global, melhorando escalabilidade e reutilização de dados
-
-🔗 **Veja o resultado online:** [Acesse aqui](https://laizars.github.io/Desafio-code-queens/)
 
 ✨ Desenvolvido com dedicação durante o desafio da Code Queens.
