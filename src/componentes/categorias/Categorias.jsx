@@ -1,7 +1,10 @@
+import { useLoja } from '../../contexts/LojaContexts';
 import categorias from '../../services/Mocks/categorias';
 import './categorias.css';
 
-function Categorias({ categoria, setCategoria }) {
+function Categorias() {
+  const { categoria, setCategoria } = useLoja();
+
   return (
     <section className="categorias">
       <h2>Category</h2>

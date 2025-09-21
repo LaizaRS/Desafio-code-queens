@@ -1,8 +1,10 @@
 import { FaFireAlt, FaHeart, FaRegClock, FaStar } from 'react-icons/fa';
-
+import { useLoja } from '../../contexts/LojaContexts';
 import './favoritos.css';
 
-function Favoritos({ produtoSelecionado }) {
+function Favoritos() {
+  const { produtoSelecionado } = useLoja();
+
   return (
     <section className="favoritos">
       <div className="inline">

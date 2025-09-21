@@ -1,9 +1,11 @@
 import { SiFireship } from 'react-icons/si';
+import { useLoja } from '../../contexts/LojaContexts';
 import categoriasEProdutos from '../../services/Mocks/categoriasEProdutos';
 import './menuPopular.css';
 
-function MenuPopular({ categoriaSelecionada, produtoSelecionado, setProdutoSelecionado }) {
-  const produtos = categoriasEProdutos[categoriaSelecionada];
+function MenuPopular() {
+  const { categoria: categoriaSelecionada, produtoSelecionado, setProdutoSelecionado } = useLoja();
+  const produtos = categoriasEProdutos[categoriaSelecionada] || [];
 
   return (
     <section className="menu-popular">
