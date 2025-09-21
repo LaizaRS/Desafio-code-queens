@@ -87,4 +87,6 @@ Partes dinâmicas implementadas além do proposto, aproximando o projeto de um c
 
 Uso de Context API para gerenciamento de estado global, melhorando escalabilidade e reutilização de dados
 
+🔗 **Veja o resultado online:** [Acesse aqui](https://laizars.github.io/Desafio-code-queens/)
+
 ✨ Desenvolvido com dedicação durante o desafio da Code Queens.
